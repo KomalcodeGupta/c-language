@@ -1,0 +1,699 @@
+                                                         ** INSTALLATION OF REACT JS---
+
+
+
+
+FIRST OF ALL TO INSTALL NODE JS AND  AFTER THAT TO OPEN THE COMMAND PROMPT WITH THE HELP OF WINDOW SEARCH AND TO TEXT THE FOLLOWING STEPS-
+
+FIRST STEP-node -v                    press enter    (NODE VERSIONS)
+ 
+SECOND STEP-npx create-next-app@latest         press enter to press enter until then the my-app do not show on your screen after then
+
+THIRD STEP- npm run dev
+                                                        
+
+
+                                                       REACT JS---
+
+                                
+
+                                             ** What is Reactjs?
+ 
+React is the library of the javascript and it is developed and maintain by facebook .
+it is used to create the user interface(frontend).it is open source programe and single page programme.
+
+
+
+                                          ** How to REACTJS works?
+
+
+the react is work as following components-
+
+
+
+                                    HEADER 
+
+
+UPPER SIDE                         MIDDLE ARTICLE
+   MENU
+
+
+
+ LOWER SIDE 
+  MENU
+                           
+
+
+                                    FOOTER
+
+
+ 
+                                            ** FEATURES OF THE REACT JS?
+
+THERE ARE MANY FEATURES OF THE REACT JS -
+
+JSX- javascript + html
+
+COMPONENT- the separate component working like header.
+
+ONE-WAY DATA BINDING-source code to destination i.e one way binding
+
+VIRTUAL DOM-it is the original dom copy before the running in the browser. DOM stand for (document object model). 
+
+SIMPLICITY- IT IS manage very easy and working to simple way.
+
+PERFORMANCE-it has best performance to build and creat the UI(frontend).
+
+
+
+                          
+                                       ** FOLDER /PROJECT STRUCTURE OF THE REACT---
+
+
+*Public = under this file-
+ <>index.html file =all html write in this file.
+favicon.icon=  used to favicon icons.
+
+*scr = under this file-
+app.js = it is the parent file of the another child file. 
+style.css =it has used all css code .
+.gitignore = it is used to a git repository to ignore the file and directories which are unnecessary to the project.
+
+
+*node-modules = ALL DEPENDENCIES/LIBRARIES ARE INSTALL IN THIS FILE.
+
+*{}Package-json = THE REQUIRED SCRIPT AND DEPENDENCIES IN THIS FILE.
+
+
+
+
+                                                       **  WHAT IS NEXT JS?
+
+
+ANSWER-IT IS THE OPEN SOURCE WEB DEVELOPEMENT FRAMEWORK BASED ON REACT DEVELOPED BY VERCEL IN 2016.NEXT JS STANDS FOR OUT FOR ITS STANDING CAPABILITIES ,INCLIUDING SERVER SIDE RENDERING AND ENHANCED SEARCH ENGINE OPTIMIZATION. IT CAN WORK AS BOTH FRONTENED AND BACKEND. IT IS THE CLIENT AND SERVER RENDERING FRAMEWORK.NEXT JS IS USED TO FAST RUNNING AND LOADING APPLICATION.
+
+
+
+                      
+                                                     **    WHAT IS TYPE SCRIPT?
+
+ANSWER- TYPESCRIPT IS THE SYNTACTIC SUPERSET(IT SHARES THE SAME BASE SYNTAX AS JAVASCRIPT BUT ADDS SOMTHINGS TO IT) OF THE JAVASCRIPT WHICH ADDS STATIC TYPING .IT IS USED AS OPEN-SOURCE OBJECT OREINTED PROGRAMMING LANGUAGE IN WHICH IS USED TO CHECK THE DATATYPE AND VARIABLE,FUNCTION IT IS DEVELOPED BY MICROSOFT IN 2012.
+
+
+
+                                                        **  WHAT IS TALWIND CSS?
+
+
+ANSWER- TALWIND IS THE OPEN-SOURCE CSS FRAMEWORK.TI IS THE FIRST UTILITY-FIRST CSS FRAMEWORK FOR RAPIDLY BUILDING CUSTOM DESIGNS.IT IS DEVELOPED BY "ADAM WATHAN" IN 2017.THE MAIN FEACTURE OF THIS LIBRARY IS THAT UNLIKE OTHER CSS FRAMEWORK LIKE BOOTSTRAP.IT IS NOT DEFINE THE SERIES OF THE PREDEFINE CLASSES FOR ELEMENT SUCH AS BUTTON OR TABLES.  
+
+
+     
+                                                      **   FEATURES OF TALWIND CSS---
+
+
+1.FASTER DEVELOPEMENT WITH UTILITIES CLASSES .
+2.HIGHLY COUSOMIZABLE DESIGN SYSTEM .
+3.IT HELPS MAINTAIN CONSISTENCY AND SPEED UP THE UI DESIGN PROCESS.
+4.REDUCES THE CSS FILE SIZE.
+5.IT PROVIDES FREE OPEN-SOURCE PROGRAMMING.
+
+
+ developer command- npm run dev
+
+
+                                                        **   What is props in react?
+
+answer-the primary use of the props is to pass data and callback function to child components.it allows for a unidirectional data flows,
+where the parent dictates the values and behavior of the child components.
+
+
+
+example- function Message(props) {
+  return <div>
+{props.message}
+</div>
+}
+// Or as an arrow function
+const Message = (props) =>  <div>
+{props.message}
+</div>
+
+
+
+
+
+                                                           **  What is JSON?
+
+
+answer-JSON stands for JavaScript Object Notation.
+JSON is a lightweight data interchange format.
+JSON is language independent .
+JSON is "self-describing" and easy to understand.
+
+
+
+
+
+                                                           **  what is HOOKS?
+
+
+answer-Hooks are more restrictive than other functions. You can only call Hooks at the top of your components (or other Hooks). If you want to use useState in a condition or a loop, extract a new component and put it there.
+
+
+
+https://blog.logrocket.com/guide-usestate-react/#:~:text=useState%20is%20React%20Hook%20that,the%20setter%20function%20is%20called
+
+
+
+https://www.geeksforgeeks.org/create-a-calculator-app-using-next-js/
+
+
+                                                     **  How can used to loop in react?
+
+
+answer- A function in a react by using javascript for loop or array method like map().
+
+example-. import React from 'react'; 
+function List() { 
+const fruits = ['Apple', 'Banana', 'Orange', 'Mango']; 
+const renderList = () => { 
+const listItems = []; 
+for (let i = 0; i < fruits;i++)
+return(
+
+)
+}
+
+
+import React from 'react';
+ const items = ['Apple', 'Banana', 'Cherry']; 
+function FruitList() { 
+return ( <ul> {items. map((item, index) => ( <li key={index}>{item}</li> ))} </ul> ); } 
+export default FruitList;
+
+
+
+                                               **  How to used the route in react/nextjs?
+
+
+answer-the nextjs router allows you do client-side route transitons between pages ,similar toa single-page application . 
+ a react component called link is provided to do this client -side route transition.
+
+
+                                                      **  what is nextjs route?
+   
+
+answer-Next.js offers a simple and intuitive way to manage routing using a file-based system.
+
+*Static Routes
+
+// pages/index.js.js
+
+const Home = () => { 
+    return(
+        <div>
+            Home Page
+        </div>
+    );
+}
+export default Home;
+
+
+
+
+
+*Nested Routes
+
+
+//pages/user/About.js
+
+const About = () => { 
+    return(
+        <div>
+            About Page
+        </div>
+    );
+}
+export default About;
+
+
+
+*Dynamic Routes
+
+// pages/users/[id].js
+
+import { useRouter } from 'next/router';
+
+const User= () => {
+  const router = useRouter();
+  const { id } = router.query;
+
+  return <p>User: {id}</p>;
+};
+
+export default User;
+
+
+
+
+*API Routes
+
+
+// Filename : pages/api/hello.js
+
+export default function handler(req, res) {
+    res.status(200).json({ message: 'Hello, world!' });
+}
+
+                                              ** what is Nextjs?
+
+
+         Next.js is a React framework that enables you to build fast, scalable, and production-ready web 
+          applications with features like:
+
+
+                                               ** Next.js vs React vs CRA-----
+
+
+    
+ ** React (Library)---
+
+What it is: A JavaScript library for building UI.
+
+Doesn’t include routing, server-side rendering, or project structure.
+
+Use case: Building the view layer of an app — needs extra tools like React Router and Webpack for a complete setup.
+
+
+** CRA (Create React App)---
+
+What it is: A tool to scaffold a ready-to-go React project with Webpack, Babel, etc., configured.
+
+Client-side rendering only (CSR) — everything runs in the browser.
+
+Great for SPAs (Single Page Applications).
+
+No built-in routing, SSR, or API backend — you handle all that yourself or with 3rd-party tools.
+
+
+** Next.js (Framework)---
+
+What it is: A framework built on top of React that includes routing, SSR, SSG, APIs, and more.
+
+Built for production — has built-in optimizations for performance and SEO.
+
+Full-stack capable: Can handle both frontend and backend (API routes)
+
+
+                                               ** Project structure explained-----
+
+                         
+
+       /my-next-app
+├── app/                   # App Router: file-based routing
+│   ├── layout.js          # Common layout (header, footer, etc.)
+│   ├── page.js            # Home page (route: "/")
+│   ├── about/
+│   │   ├── page.js        # About page (route: "/about")
+│   │   └── layout.js      # Optional nested layout
+│   └── blog/
+│       ├── [slug]/        # Dynamic route (e.g., /blog/hello-world)
+│       │   └── page.js
+│       └── page.js        # Blog index (route: "/blog")
+│
+├── public/                # Static assets (e.g., images, icons)
+│   └── favicon.ico
+│
+├── components/            # Reusable UI components
+│   └── Navbar.js
+│
+├── styles/                # CSS or Tailwind setup
+│   └── globals.css
+│
+├── lib/                   # Utilities, API functions, etc.
+│   └── getPosts.js
+│
+├── middleware.js          # Middleware logic (auth, redirects, etc.)
+├── next.config.js         # Framework config
+├── package.json
+└── README.md
+
+
+
+
+                                                            ** Running the development server---
+
+
+       
+http://localhost:3000
+
+
+                                                **  Pages directory and file-based routing---
+
+page based routes--
+
+                       /pages
+├── index.js         ➜ route: "/"
+├── about.js         ➜ route: "/about"
+├── contact.js       ➜ route: "/contact"
+├── blog/
+│   ├── index.js     ➜ route: "/blog"
+│   └── [slug].js    ➜ dynamic route: "/blog/my-post"
+├── _app.js          ➜ custom app wrapper (for layouts, global styles)
+├── _document.js     ➜ custom HTML document (only used on server)
+└── api/
+    └── hello.js     ➜ API route: "/api/hello"
+
+
+
+file based routes--
+
+
+      File/Folder                 	     URL Route
+
+pages/index.js                                   /
+pages/about.js                          	/about
+pages/blog/index.js	                       /blog
+pages/blog/[slug].js                          /blog/:slug
+pages/api/hello.js	                     /api/hello
+
+
+
+          
+
+                                                   **  Nested routes---
+
+
+/pages
+├── index.js                   → "/"
+├── about.js                     → "/about"
+├── dashboard/
+│   ├── index.js                 → "/dashboard"
+│   └── settings.js                → "/dashboard/settings"
+
+
+
+
+                                             **  Dynamic routes ---
+ 
+
+
+/app
+├── blog/
+│   ├── [slug]/
+│   │   └── page.js         → "/blog/:slug"
+
+
+
+
+                                                  ** Catch-all routes---
+
+
+
+           A catch-all route lets you match any number of path segments using a file like:
+
+ [...slug].js
+ 
+
+
+                                                **  Link component for navigation---
+
+It works just like an anchor tag but is much faster because it uses client-side routing.
+
+import Link from 'next/link';
+
+examples-
+
+          import Link from 'next/link';
+
+export default function Navbar() {
+  return (
+    <nav>
+      <Link href="/">Home</Link> |{" "}
+      <Link href="/about">About</Link> |{" "}
+      <Link href="/blog">Blog</Link>
+    </nav>
+  );
+}
+
+
+                     
+                                             ** custom 404 page in next js---
+
+
+import Link from 'next/link';
+
+export default function Custom404() {
+  return (
+    <div style={{ textAlign: 'center', padding: '50px' }}>
+      <h1 style={{ fontSize: '100px' }}>404</h1>
+      <p>Oops! The page you're looking for doesn't exist.</p>
+      <Link href="/">
+        <a style={{ color: 'blue', textDecoration: 'underline' }}> Go back to Home</a>
+      </Link>
+    </div>
+  );
+}
+
+
+                                                  **   Passing children props ---
+
+
+          
+ The create a layout component that will wrap around other content and display it in a certain way.
+
+
+export default function Layout({ children }) {
+  return (
+    <div style={{ padding: '20px', border: '2px solid #ccc', borderRadius: '8px' }}>
+      <h1>Welcome to my site</h1>
+      <div>{children}</div>
+    </div>
+  );
+}
+
+
+
+                                                    **  Creating layout components---
+
+
+
+     A layout component in Next.js typically defines a common structure (like a header, footer, and sidebars)
+     and wraps the page content.
+
+
+
+import Layout from '../components/Layout';
+
+export default function Home() {
+  return (
+    <Layout>
+      <h2>Welcome to the Homepage!</h2>
+      <p>This page uses the layout component to wrap the content.</p>
+    </Layout>
+  );
+}
+
+
+                                             **  Server-Side Rendering (SSR)  ---
+
+
+1.When a user requests a page, Next.js fetches the data (like from an API or database) on the server.
+
+2.It renders the page with the data on the server.
+
+3.The fully rendered HTML is sent to the browser.
+
+4.This means that the user sees the content immediately, without waiting for JavaScript to load and render the page on the client-side.
+
+   
+ 
+  example-
+
+import React from 'react';
+
+export default function UsersPage({ users }) {
+  return (
+    <div>
+      <h1>Users List</h1>
+      <ul>
+        {users.map(user => (
+          <li key={user.id}>{user.name}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+
+
+export async function getServerSideProps() {
+  // Fetching data on each request
+  const res = await fetch('https://jsonplaceholder.typicode.com/users');
+  const users = await res.json();
+
+  // Passing the fetched data to the page as props
+  return {
+    props: { users },
+  };
+}
+
+
+
+
+                                                          **  Client-side fetching  --- 
+
+
+             
+1. The page loads first with minimal data (often just the skeleton of the page).
+
+2.After the page is loaded, JavaScript runs in the browser to fetch the data (often using fetch() or libraries like axios).
+
+3.Once the data is fetched, the page updates with the new content without a full page reload.
+
+
+ example- 
+
+import React, { useEffect, useState } from 'react';
+
+export default function UsersPage() {
+  const [users, setUsers] = useState([]); 
+  const [loading, setLoading] = useState(true); 
+
+  useEffect(() => {
+    // Fetching data after the page has loaded
+    const fetchData = async () => {
+      const res = await fetch('https://jsonplaceholder.typicode.com/users')
+      const data = await res.json();
+      setUsers(data); 
+      setLoading(false); 
+    };
+
+    fetchData(); 
+  }, []); 
+
+  if (loading) {
+    return <div>Loading...</div> 
+  }
+
+  return (
+    <div>
+      <h1>Users List</h1>
+      <ul>
+        {users.map(user => (
+          <li key={user.id}>{user.name}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+
+                                                  **  Creating API endpoints in /pages/api ---
+
+
+        To create an API route, simply create a file inside the /pages/api directory. 
+         The file path will become the API endpoint URL.
+
+
+           let user = [
+  { "id": 1, "name": "John Doe" },
+  { "id": 2, "name": "Jane Doe" }
+]
+
+                                                  
+
+
+
+                                         ** Handling GET and POST request ---
+           
+
+*GET Request: Typically used to fetch data from a server.
+
+*POST Request: Typically used to send data to the server (for example, creating or updating resources). import React, { useState } from 'react';
+
+
+example- 
+
+      // Dummy data for demonstration
+let users = [
+  { id: 1, name: 'John Doe' },
+  { id: 2, name: 'Jane Doe' },
+];
+
+export default function handler(req, res) {
+  // Handle GET request
+  if (req.method === 'GET') {
+    // Respond with the list of users
+    res.status(200).json(users);
+  }
+  
+  // Handle POST request
+  else if (req.method === 'POST') {
+    // Create a new user
+    const newUser = req.body; // Data sent from the client in the body of the POST request
+    newUser.id = users.length + 1; // Assign an ID to the new user
+    users.push(newUser); // Add the new user to the users array
+
+    // Respond with the newly added user
+    res.status(201).json(newUser);
+  }
+
+  // Handle unsupported HTTP methods (e.g., PUT, DELETE)
+  else {
+    res.status(405).json({ message: 'Method Not Allowed' });
+  }
+}
+       
+
+                                                  ** Connecting to databases (e.g., MongoDB)  ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                       
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
